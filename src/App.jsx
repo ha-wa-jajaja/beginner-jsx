@@ -1,6 +1,5 @@
 import React from "react";
 
-// sass loader:npm install node-sass
 import "./assets/basics.scss";
 
 function App() {
