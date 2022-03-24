@@ -1,0 +1,26 @@
+.navbar {
+  width: 100%;
+  height: 80px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.navLinks {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    text-decoration: none;
+    color: white;
+    font-size: 26px;
+  }
+
+  .isActive {
+    color: #61dbfb;
+    font-weight: bold;
+  }
+}
