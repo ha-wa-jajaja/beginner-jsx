@@ -8,7 +8,8 @@ const Basics = () => {
   const [demoData, updateDemo] = useState([{ content: "demo data" }]);
 
   const onEmit = (arg) => {
-    // when updating state that depends on prev values, the function passes in prev automatically
+    // when updating state that depends on prev values,
+    // the function passes in prev automatically
     updateDemo((prev) => {
       return [arg, ...prev];
     });
