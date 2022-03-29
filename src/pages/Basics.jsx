@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 import ItemRow from "../components/basics/ItemRow";
 import InputForm from "../components/basics/InputForm";
+import EffectDemo from "../components/basics/EffectDemo";
+import FetchApi from "../components/basics/FetchAPI";
 
 const Basics = () => {
   // create mutable variables by using useState()
@@ -26,6 +28,8 @@ const Basics = () => {
           ))}
         </ul>
       </div>
+      <EffectDemo></EffectDemo>
+      <FetchApi></FetchApi>
     </div>
   );
 };
