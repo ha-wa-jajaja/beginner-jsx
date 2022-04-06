@@ -1,11 +1,7 @@
 import React from "react";
 
 const ItemRow = (props) => {
-  return (
-    <div>
-      <li>{props.data.content}</li>
-    </div>
-  );
+  return <li>{props.data.content}</li>;
 };
 
 export default ItemRow;

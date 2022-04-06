@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar";
 import Basics from "./pages/Basics";
 import Advanced from "./pages/Advanced";
 import LessUsed from "./pages/LessUsed";
+import RouterTemp from "./components/adv/RouterTemp";
 
 import "./assets/basics.scss";
 
@@ -17,6 +18,8 @@ function App() {
       <Routes>
         <Route path="/" element={<Basics></Basics>}></Route>
         <Route path="/adv" element={<Advanced></Advanced>}></Route>
+        {/* router params works like vue */}
+        <Route path="/adv/:name" element={<RouterTemp />}></Route>
         <Route path="/less" element={<LessUsed></LessUsed>}></Route>
       </Routes>
     </div>

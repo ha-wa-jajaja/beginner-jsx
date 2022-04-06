@@ -4,6 +4,7 @@ import ItemRow from "../components/basics/ItemRow";
 import InputForm from "../components/basics/InputForm";
 import EffectDemo from "../components/basics/EffectDemo";
 import FetchApi from "../components/basics/FetchAPI";
+// fragments, useRef()
 
 const Basics = () => {
   // create mutable variables by using useState()
