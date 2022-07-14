@@ -7,32 +7,32 @@ import FetchApi from "../components/basics/FetchAPI";
 // fragments, useRef()
 
 const Basics = () => {
-  // create mutable variables by using useState()
-  const [demoData, updateDemo] = useState([{ content: "demo data" }]);
+    // create mutable variables by using useState()
+    const [demoData, updateDemo] = useState([{ content: "demo data" }]);
 
-  const onEmit = (arg) => {
-    // when updating state that depends on prev values,
-    // the function passes in prev automatically
-    updateDemo((prev) => {
-      return [arg, ...prev];
-    });
-  };
+    const onEmit = (arg) => {
+        // when updating state that depends on prev values,
+        // the function passes in prev automatically
+        updateDemo((prev) => {
+            return [arg, ...prev];
+        });
+    };
 
-  return (
-    <div className="page">
-      <h2>Basics</h2>
-      <InputForm onEmit={onEmit}></InputForm>
-      <div>
-        <ul>
-          {demoData.map((ele, index) => (
-            <ItemRow data={ele} key={index}></ItemRow>
-          ))}
-        </ul>
-      </div>
-      <EffectDemo></EffectDemo>
-      <FetchApi></FetchApi>
-    </div>
-  );
+    return (
+        <div className="page">
+            <h2>Basics</h2>
+            <InputForm onEmit={onEmit}></InputForm>
+            <div>
+                <ul>
+                    {demoData.map((ele, index) => (
+                        <ItemRow data={ele} key={index}></ItemRow>
+                    ))}
+                </ul>
+            </div>
+            <EffectDemo></EffectDemo>
+            <FetchApi></FetchApi>
+        </div>
+    );
 };
 
 export default Basics;

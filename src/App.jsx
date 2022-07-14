@@ -12,18 +12,18 @@ import "./assets/basics.scss";
 import { Routes, Route } from "react-router-dom";
 
 function App() {
-  return (
-    <div className="App">
-      <Navbar></Navbar>
-      <Routes>
-        <Route path="/" element={<Basics></Basics>}></Route>
-        <Route path="/adv" element={<Advanced></Advanced>}></Route>
-        {/* router params works like vue */}
-        <Route path="/adv/:name" element={<RouterTemp />}></Route>
-        <Route path="/less" element={<LessUsed></LessUsed>}></Route>
-      </Routes>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Navbar></Navbar>
+            <Routes>
+                <Route path="/" element={<Basics></Basics>}></Route>
+                <Route path="/adv" element={<Advanced></Advanced>}></Route>
+                {/* router params works like vue */}
+                <Route path="/adv/:name" element={<RouterTemp />}></Route>
+                <Route path="/less" element={<LessUsed></LessUsed>}></Route>
+            </Routes>
+        </div>
+    );
 }
 
 export default App;
