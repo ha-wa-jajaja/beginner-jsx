@@ -8,6 +8,8 @@ import RouterTemp from "./components/adv/RouterTemp";
 
 import "./assets/basics.scss";
 
+// testtttt
+
 // here I used router v6 ,no switch ,only Routes
 import { Routes, Route } from "react-router-dom";
 
