@@ -4,15 +4,15 @@ import React from "react";
 import { useParams } from "react-router-dom";
 
 const RouterTemp = () => {
-  // activate useParams() to get paramater
-  const params = useParams();
+    // activate useParams() to get paramater
+    const params = useParams();
 
-  return (
-    <div>
-      <h2>Router Template</h2>
-      <p>the param is {params.name}</p>
-    </div>
-  );
+    return (
+        <div>
+            <h2>Router Template</h2>
+            <p>the param is {params.name}</p>
+        </div>
+    );
 };
 
 export default RouterTemp;
